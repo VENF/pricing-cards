@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "inst":"npm install && npm install --prefix client ",
     "lint": "prettier --write ./src/**/*.{ts,json,md} ./_tests_/**/*.ts",
     "start": "cross-env NODE_ENV=pro node ./dist/index.js",
     "dev": "rimraf dist && cross-env NODE_ENV=dev tsc-watch --onSuccess \"node ./dist/index.js\"",
