@@ -1,0 +1,29 @@
+.pricing-page{
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    .header{
+        text-align: center;
+        p{
+            margin: 10px 0px;
+        }
+    }
+    .cards{
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    .pricing-page{
+        height: initial !important;
+        .cards{
+            flex-flow: column;
+            align-items: center;
+        }
+    }
+}

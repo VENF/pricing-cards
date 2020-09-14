@@ -1,0 +1,28 @@
+.btn-mode{
+    display: flex;
+    width: 130px;
+    height: 35px;
+    border: 3px solid #6C63FF;
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    &:focus{
+        outline: none;
+    }
+    .ligth,.dark{
+        position: absolute;
+        top: 2px;
+        left: 15px;
+        transition: all ease .3s;
+    }
+    .dark{
+        left: 80px;
+    }
+}
+.active{
+    left: 15px !important;
+}
+.await{
+    left: 80px !important;
+}

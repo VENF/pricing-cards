@@ -1,0 +1,18 @@
+.loader-container{
+    .loader{
+        border: 3px solid #EEE;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border-top: 3px solid #6C63FF;
+        animation: loader infinite 1s linear;
+    }
+}
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
