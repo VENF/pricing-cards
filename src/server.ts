@@ -2,6 +2,7 @@ import express, { Application } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import SessionRoute from './routes/session.route';
+import operationsRoute from './routes/operations.route';
 import path from 'path';
 
 export class Server implements IServer {
@@ -18,7 +19,7 @@ export class Server implements IServer {
     this.server.set('port', process.env.PORT || this.port);
   }
   middlewares() {
-    // const corsOptions = { origin: '', optionsSuccessStatus: 200 }
+    //const corsOptions = { origin: 'https://pricing-cards.herokuapp.com', optionsSuccessStatus: 200 }
     this.server.use(cors());
     this.server.use(morgan('dev'));
     this.server.use(express.json());
@@ -27,6 +28,7 @@ export class Server implements IServer {
   }
   routes() {
     this.server.use(SessionRoute);
+    this.server.use(operationsRoute);
   }
   listen() {
     this.server.listen(this.server.get('port'));

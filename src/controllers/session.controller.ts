@@ -5,7 +5,6 @@ const stripe = require('stripe')(process.env.API_KEY_TEST || '')
 export const handlerSessionPay = async (req: Request, res: Response) => {
   const amount = parseInt(req.params.amount) * 100;
   const service = req.params.service;
-
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     line_items: [
@@ -21,8 +20,8 @@ export const handlerSessionPay = async (req: Request, res: Response) => {
       },
     ],
     mode: "payment",
-    success_url: "https://example.com/success",
-    cancel_url: "https://example.com/cancel",
+    success_url: "https://pricing-cards.herokuapp.com/success",
+    cancel_url: "https://pricing-cards.herokuapp.com/cancel",
 });
 
 return res.json({ id: session.id });
