@@ -8,7 +8,7 @@ const stripePromise = loadStripe('pk_test_51HQGJ3ACKD1ZTJE3Ti9ORsPkQKetfHvEhOjl2
 const BtnPay = (props) => {
     const [loader, setLoader] = useState(false);
 
-    const url = 'http://localhost:4000/create-checkout-session';
+    const url = 'https://pricing-cards.herokuapp.com/create-checkout-session';
     const data = {
         amount: props.amount,
         serviceName: props.serviceName

@@ -4,4 +4,5 @@ COPY . .
 RUN npm run inst
 RUN npm run build
 RUN npm run prepare
+EXPOSE 4000
 CMD [ "npm", "start" ]
