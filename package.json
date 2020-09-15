@@ -1,7 +1,7 @@
 {
   "name": "pricing-cards",
   "version": "1.0.0",
-  "description": "",
+  "description": "price tags developed in react, node, typescript and docker, integrating with stripe",
   "main": "index.js",
   "scripts": {
     "inst": "npm install && npm install --prefix client ",
