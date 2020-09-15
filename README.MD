@@ -1,5 +1,8 @@
 # Price cards integrating with stripe
 
+### demo site
+https://pricing-cards.herokuapp.com
+
 ### Tecnologies
 - Languages: `NodeJS` and `TypeScript` and `Docker`
 - Framework: `Express` and `React`
