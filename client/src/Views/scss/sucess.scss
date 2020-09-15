@@ -1,0 +1,28 @@
+.success-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #f1f0f0;;
+    button{
+        margin: 3% 0px;
+        padding: 10px 70px;
+        cursor: pointer;
+        border: none;
+        background: #6C63FF;
+        color: #EEE;
+        border-radius: 3px;
+        transition: all ease 0.5s;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background: #443eb6;
+        }
+    }
+    h2{
+        margin: 3% 0px;
+        color: rgb(29, 28, 28);
+    }
+}
